@@ -1,0 +1,60 @@
+---
+config:
+  theme: mc
+  look: handDrawn
+---
+flowchart TD
+ subgraph S1["第一阶段：紧急稳定期"]
+    direction LR
+        E["缓解剧烈痛苦<br>稳定情绪<br>提供‘喘息之窗’"]
+        D["药物治疗<br>（神经化学调节）"]
+        n1[" "]
+  end
+ subgraph S2["第二阶段：康复与重建期"]
+    direction LR
+        G["认知重构<br>识别并改变负面思维模式"]
+        F["心理咨询<br>（认知行为疗法CBT等）"]
+        H["建立新的行为模式<br>培养健康生活习惯"]
+  end
+ subgraph S3["第三阶段：维持与预防期"]
+    direction LR
+        J["形成稳固的健康循环"]
+        I["获得新的世界观与应对技能"]
+  end
+    A["出现抑郁症症状"] --> B{"寻求专业帮助"}
+    B --> C["精神科医生诊断"]
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J -- 坚持维持治疗 --> K["康复，降低复发风险"]
+    D -. 过早停药 .-> L["神经化学基础再度失衡"]
+    F -. 未进行认知重构 .-> M["思维模式未改变<br>遇应激事件易复发"]
+    H -. 未养成习惯 .-> N["缺乏健康缓冲体系"]
+    L --> O["复发风险大幅增加"]
+    M --> O
+    N --> O
+    n1@{ img: "https://static.mermaidchart.dev/whiteboard/default-image-shape.svg", h: 200, w: 200, pos: "b"}
+     B:::Rose
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    style E stroke:#00C853,fill:#FFF9C4
+    style D stroke:#C8E6C9,fill:#E1BEE7
+    style G stroke:#FFD600,fill:#FFF9C4
+    style F stroke:#FFCDD2,fill:#FFF9C4
+    style H stroke:#FFD600,fill:#FFF9C4
+    style J stroke:#FFCDD2,fill:#C8E6C9
+    style I stroke:#FFCDD2,fill:#C8E6C9
+    style A stroke:#000000,stroke-width:2px,stroke-dasharray: 0,fill:#BBDEFB
+    style B stroke:#FFCDD2,fill:#FFF9C4,stroke-width:4px,stroke-dasharray: 0
+    style C stroke:#FFD600,fill:#FFF9C4
+    style K stroke:#00C853,fill:#C8E6C9
+    style L stroke:#FF6D00,fill:#FFE0B2
+    style M stroke:#FF6D00,fill:#FFE0B2
+    style N stroke:#FF6D00,fill:#FFE0B2
+    style O stroke:#D50000,fill:#FFCDD2
+    style S1 fill:transparent,stroke:#BBDEFB
+    style S2 stroke:#BBDEFB
+    style S3 stroke:#BBDEFB
